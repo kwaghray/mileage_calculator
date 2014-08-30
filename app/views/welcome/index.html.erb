@@ -8,7 +8,7 @@ Enter the number of Litres: <input type="text" name="litres"><br>
 <button  type="submit">Go</button>
 </form>
 
-the Mileage is:<p><%= @e %></p>
+the Mileage is:<p><%= @e %>Km/l</p>
 
 <% unless @e.nil? %>
 
@@ -20,6 +20,8 @@ the Mileage is:<p><%= @e %></p>
 
 <% elsif @e <50 %>
 <p>Waste ra babu Change your bike</p>
+
+
 
 <%end %>
 <% end %>
