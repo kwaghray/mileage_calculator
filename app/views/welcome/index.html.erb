@@ -10,5 +10,16 @@ Enter the number of Litres: <input type="text" name="litres"><br>
 
 the Mileage is:<p><%= @e %></p>
 
+<% unless @e.nil? %>
 
+<% if @e > 75 %>
+<p>Your Bike is Super oooooooo super</p>
 
+<% elsif @e > 50 && @e <75 %>
+<p>Your bike is average babu</p>
+
+<% elsif @e <50 %>
+<p>Waste ra babu Change your bike</p>
+
+<%end %>
+<% end %>
